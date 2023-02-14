@@ -8,10 +8,17 @@ public class Application {
      * produce such a result is included in the For Loop lab documentation.
      */
     public static void main(String[] args) {
-        Lab forlap = new Lab();
-        System.out.println("This lab code should return a String of all numbers from 1 to 6, not including 6.");
-        System.out.println("Current result: ");
-        String result = forlap.returnNumbers(1, 6);
-        System.out.println(result);
+        int start = 0;
+        int end = 10;
+        String buildingString = "";
+
+        for (int i=start; i<end;i++){
+            buildingString+= i + " ";
+
+        }
+
+        System.out.println(buildingString);
+
+        
     }
 }
